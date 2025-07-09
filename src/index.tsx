@@ -1,0 +1,35 @@
+import { createRoot } from "react-dom/client";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router";
+import { Provider } from "react-redux";
+import { store } from "./modules/Redux/store";
+import { HandleRefresh } from "./Views/HandleRefresh";
+import { Header } from "./Views/Header";
+
+import { Home } from "./Views/Home";
+import "./index.scss";
+
+const domain = window.location.hostname; // Used to view the hostname you are in.
+let rootPath = ""; // rootpath needs to be blank and able to change
+if (domain === "xasbus.github.io") rootPath = "/repository_Name_Goes_Here";
+// Basically says if my rootpath is ^ then add /Capstone-Lvl-4 which is the repository name I chose.
+// If the domain isn't that. Then leave it blank
+
+const bodyTag = document.getElementById("bodyTag");
+const root = createRoot(bodyTag);
+
+root.render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <HandleRefresh>
+        <Header />
+        <Routes>
+          <Route path={`${rootPath}/`} element={<Home />} />
+          <Route path={`${rootPath}/home`} element={<Home />} />
+          <Route path={`${rootPath}/index.html`} element={<Home />} />
+          <Route path={`${rootPath}/404.html`} element={<Home />} />
+        </Routes>
+      </HandleRefresh>
+    </BrowserRouter>
+  </Provider>
+);
