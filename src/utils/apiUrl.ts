@@ -9,7 +9,7 @@ export function apiUrl() {
   } else {
     apiUrl = window.location.hostname.includes("lambda")
       ? "https://lpyqdwgkcrzfk553sygn7ijile0vzovm.lambda-url.us-east-2.on.aws" // Use Lambda if domain includes "lambda"
-      : "https://lvl-4-capstone.uc.r.appspot.com"; // Otherwise, use Google Cloud
+      // : "https://lvl-4-capstone.uc.r.appspot.com"; // Otherwise, use Google Cloud
   }
 
   return apiUrl;

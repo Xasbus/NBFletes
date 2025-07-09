@@ -9,9 +9,6 @@ export function CollapsibleNavbar() {
   return (
     <nav className="nav-pills navbar navbar-expand-md bg-body-tertiary colNavBarColor">
       <div className="container-fluid navColor">
-        <a className="navbar-brand" to="#">
-          <i className="bi bi-playstation" style={{ fontSize: "2vw" }}></i>
-        </a>
         <button
           className="navbar-toggler colNavBarColor"
           type="button"
