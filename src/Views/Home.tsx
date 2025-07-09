@@ -9,7 +9,7 @@ export function Home() {
         <Navbar />
       </header>
       <main>
-        <h1>Test h1</h1>
+        <h1>Nicole B. Fletes</h1>
         <h2>test h2</h2>
       </main>
       <footer></footer>
