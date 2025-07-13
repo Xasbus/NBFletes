@@ -1,3 +1,19 @@
 body {
-  background-color: rgb(255, 253, 208);
+  background-image: url(../assets/backgroundNBPic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.colNavBarColor {
+  background-color: transparent !important;
+}
+.nav-pills .nav-link {
+  color: white; /* Text color */
+  background-color: #5a5a5a; /* Normal pill background */
+  border-radius: 50px; /* Optional: pill shape */
+}
+
+.nav-pills .nav-link.active {
+  color: black; /* Text color for active pill */
+  background-color: gold; /* Active pill color */
 }
