@@ -1,12 +1,36 @@
 body {
-  background-image: url(../assets/backgroundNBPic.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
 }
+
+.background-wrapper {
+  background-image: url("../assets/backgroundNBPic.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.header-wrapper {
+  width: 65vw;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 .colNavBarColor {
   background-color: transparent !important;
 }
+
 .nav-pills .nav-link {
   color: black; /* Text color */
   background-color: #5a5a5a; /* Normal pill background */
@@ -16,4 +40,18 @@ body {
 .nav-pills .nav-link.active {
   color: black; /* Text color for active pill */
   background-color: gold; /* Active pill color */
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* keeps it at the top */
+  height: 150px; /* adjust height as needed */
+  margin-top: 20px; /* optional spacing from top */
+}
+
+.title-image {
+  max-width: 100%;
+  height: auto;
+  filter: contrast(1) brightness(1.4);
 }

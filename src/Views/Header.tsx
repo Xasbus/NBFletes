@@ -3,7 +3,7 @@ import { CollapsibleNavbar } from "./CollapsibleNavBar";
 
 export function Header() {
   return (
-    <header>
+    <header className="header-wrapper">
       <CollapsibleNavbar />
     </header>
   );
