@@ -6,6 +6,7 @@ import { store } from "./modules/Redux/store";
 import { Header } from "./Views/Header";
 import { HandleRefresh } from "./Views/HandleRefresh";
 import { Home } from "./Views/Home";
+import { About } from "./Views/About";
 import "./index.scss";
 
 const domain = window.location.hostname; // Used to view the hostname you are in.
@@ -27,6 +28,7 @@ root.render(
           <Route path={`${rootPath}/home`} element={<Home />} />
           <Route path={`${rootPath}/index.html`} element={<Home />} />
           <Route path={`${rootPath}/404.html`} element={<Home />} />
+          <Route path={`${rootPath}/about`} element={<About />} />
         </Routes>
       </HandleRefresh>
     </BrowserRouter>

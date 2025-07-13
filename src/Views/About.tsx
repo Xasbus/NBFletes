@@ -1,12 +1,11 @@
 import React from "react";
-import "./Home.scss";
 import NBSignature1 from "../../assets/NoBGImage.png";
 
-export function Home() {
+export function About() {
   return (
     <>
       <main>
-        <h1>HOME PAGE</h1>
+        <h1>ABOUT PAGE</h1>
         <img
           title="NBSignature"
           alt="NBSignature"

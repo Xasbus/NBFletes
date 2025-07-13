@@ -23,12 +23,15 @@ export function CollapsibleNavbar() {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
             <NavLink
-              className="nav-link navTextColor"
+              className="nav-link"
               aria-current="page"
               to={`${rootPath}/`}
               end
             >
               Home
+            </NavLink>
+            <NavLink className="nav-link" to={`${rootPath}/about`}>
+              About
             </NavLink>
           </div>
         </div>
