@@ -7,6 +7,7 @@ export function Home() {
     <>
       <main className="background-wrapper">
         <div className="title-container content-wrapper">
+          <h1>Home Page</h1>
           <img
             className="title-image"
             title="NBSignature"
