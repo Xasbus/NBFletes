@@ -22,15 +22,17 @@ root.render(
   <Provider store={store}>
     <BrowserRouter>
       <HandleRefresh>
-        <Header />
-        <Routes>
-          <Route path={`${rootPath}/`} element={<Home />} />
-          <Route path={`${rootPath}/home`} element={<Home />} />
-          <Route path={`${rootPath}/index.html`} element={<Home />} />
-          <Route path={`${rootPath}/404.html`} element={<Home />} />
-          <Route path={`${rootPath}/about`} element={<About />} />
-        </Routes>
+        <div className="background-wrapper">
+          <Header />
+          <Routes>
+            <Route path={`${rootPath}/`} element={<Home />} />
+            <Route path={`${rootPath}/home`} element={<Home />} />
+            <Route path={`${rootPath}/index.html`} element={<Home />} />
+            <Route path={`${rootPath}/404.html`} element={<Home />} />
+            <Route path={`${rootPath}/about`} element={<About />} />
+          </Routes>
+        </div>
       </HandleRefresh>
     </BrowserRouter>
-  </Provider>
+  </Provider>,
 );

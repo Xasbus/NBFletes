@@ -1,14 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(27, 18, 13);
 }
 
 .background-wrapper {
-  background-image: url("../assets/backgroundNBPic.jpg");
+  //background-image: url("../assets/backgroundNBPic.jpg");
+  background-image: url("../assets/BrownBackground.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
+  background-size: cover;
+  background-position: center center;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -21,10 +22,14 @@ body {
   box-sizing: border-box;
 }
 .header-wrapper {
-  width: 65vw;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 0 20px;
   box-sizing: border-box;
+}
+.header-inner {
+  width: 65vw;
+  margin: 0 auto;
 }
 
 .colNavBarColor {
@@ -45,13 +50,26 @@ body {
 .title-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* keeps it at the top */
-  height: 150px; /* adjust height as needed */
-  margin-top: 20px; /* optional spacing from top */
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .title-image {
   max-width: 100%;
+  height: auto;
+  filter: contrast(1) brightness(1.4);
+}
+
+.hero-signature {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px; /* space from the top */
+  padding-bottom: 40px;
+}
+
+.signature-image {
+  width: 600px; /* adjust to taste */
+  max-width: 90%;
   height: auto;
   filter: contrast(1) brightness(1.4);
 }

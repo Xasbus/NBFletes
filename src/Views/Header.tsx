@@ -4,7 +4,9 @@ import { CollapsibleNavbar } from "./CollapsibleNavBar";
 export function Header() {
   return (
     <header className="header-wrapper">
-      <CollapsibleNavbar />
+      <div className="header-inner">
+        <CollapsibleNavbar />
+      </div>
     </header>
   );
 }
