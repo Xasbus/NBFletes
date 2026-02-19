@@ -6,8 +6,9 @@ import { store } from "./modules/Redux/store";
 import { Header } from "./Views/Header";
 import { HandleRefresh } from "./Views/HandleRefresh";
 import { Home } from "./Views/Home";
-import { About } from "./Views/About";
+import { LatestUpdates } from "./Views/LatestUpdates";
 import "./index.scss";
+import { Newsletter } from "./Views/Newsletter";
 
 const domain = window.location.hostname; // Used to view the hostname you are in.
 let rootPath = ""; // rootpath needs to be blank and able to change
@@ -29,7 +30,11 @@ root.render(
             <Route path={`${rootPath}/home`} element={<Home />} />
             <Route path={`${rootPath}/index.html`} element={<Home />} />
             <Route path={`${rootPath}/404.html`} element={<Home />} />
-            <Route path={`${rootPath}/about`} element={<About />} />
+            <Route
+              path={`${rootPath}/latestupdates`}
+              element={<LatestUpdates />}
+            />
+            <Route path={`${rootPath}/newsletter`} element={<Newsletter />} />
           </Routes>
         </div>
       </HandleRefresh>

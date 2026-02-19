@@ -30,8 +30,11 @@ export function CollapsibleNavbar() {
             >
               Home
             </NavLink>
-            <NavLink className="nav-link" to={`${rootPath}/about`}>
-              About
+            <NavLink className="nav-link" to={`${rootPath}/latestupdates`}>
+              Latest Updates
+            </NavLink>
+            <NavLink className="nav-link" to={`${rootPath}/newsletter`}>
+              Newsletter Signup
             </NavLink>
           </div>
         </div>

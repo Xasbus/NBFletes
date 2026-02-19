@@ -1,12 +1,12 @@
 import React from "react";
 import NBSignature1 from "../../assets/NoBGImage.png";
 
-export function About() {
+export function LatestUpdates() {
   return (
     <>
       <main>
         <div className="title-container content-wrapper">
-          <h1>About Page</h1>
+          <h1>Latest Updates Page</h1>
           <img
             className="title-image"
             title="NBSignature"
