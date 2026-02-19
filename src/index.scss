@@ -1,11 +1,16 @@
+/* ================================
+   GLOBAL PAGE STYLES
+================================ */
+
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(27, 18, 13);
+  font-family: "Georgia", serif;
 }
 
+/* Wrapper for background image */
 .background-wrapper {
-  //background-image: url("../assets/backgroundNBPic.jpg");
   background-image: url("../assets/BrownBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,60 +21,133 @@ body {
   justify-content: center;
 }
 
+/* Main content wrapper */
 .content-wrapper {
   width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.header-wrapper {
-  width: 100%;
-  margin: 0;
   padding: 0 20px;
+  margin-top: 20px;
   box-sizing: border-box;
+  text-align: center;
 }
-.header-inner {
-  width: 65vw;
-  margin: 0 auto;
+
+/* ================================
+   HEADER / SIGNATURE SECTION
+================================ */
+
+.hero-signature {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px; /* Mobile-first spacing */
+  padding-bottom: 20px;
 }
+
+.signature-image {
+  width: 100%;
+  max-width: 320px; /* Ideal for mobile */
+  height: auto;
+  filter: contrast(1) brightness(1.4);
+}
+
+/* ================================
+   NAVBAR OVERRIDES (Bootstrap)
+================================ */
 
 .colNavBarColor {
   background-color: transparent !important;
 }
 
-.nav-pills .nav-link {
-  color: black; /* Text color */
-  background-color: #5a5a5a; /* Normal pill background */
-  border-radius: 50px; /* Optional: pill shape */
+.navColor {
+  background-color: rgb(27, 18, 13); /* Matches page background */
 }
 
-.nav-pills .nav-link.active {
-  color: black; /* Text color for active pill */
-  background-color: gold; /* Active pill color */
+/* Remove pill styling and apply elegant gold text */
+.navbar-nav .nav-link {
+  background: none !important;
+  color: #d4af37 !important; /* Gold */
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
 }
 
-.title-container {
+.navbar-nav .nav-link:hover {
+  color: #fff8dc !important; /* Light gold */
+}
+
+/* Spread nav items evenly */
+.navbar-nav {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.title-image {
-  max-width: 100%;
-  height: auto;
-  filter: contrast(1) brightness(1.4);
+/* Remove Bootstrap container padding */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.hero-signature {
-  display: flex;
-  justify-content: center;
-  padding-top: 80px; /* space from the top */
-  padding-bottom: 40px;
+/* Make the mobile dropdown background transparent */
+.navbar-collapse {
+  background-color: transparent !important;
 }
 
-.signature-image {
-  width: 600px; /* adjust to taste */
-  max-width: 90%;
-  height: auto;
-  filter: contrast(1) brightness(1.4);
+/* Also make the inner nav container transparent */
+.navbar-nav {
+  background-color: transparent !important;
+}
+
+/* Remove Bootstrap's default white background on mobile */
+@media (max-width: 768px) {
+  .navbar,
+  .navColor,
+  .colNavBarColor,
+  .navbar-collapse,
+  .navbar-nav {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+  }
+}
+.navbar-nav .nav-link {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ================================
+   TYPOGRAPHY
+================================ */
+
+.content-wrapper h1 {
+  font-size: 1.6rem;
+  color: #d4af37;
+  margin-top: 10px;
+}
+
+/* ================================
+   RESPONSIVE BREAKPOINTS
+================================ */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .signature-image {
+    max-width: 450px;
+  }
+
+  .content-wrapper h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero-signature {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .signature-image {
+    max-width: 600px;
+  }
+
+  .content-wrapper h1 {
+    font-size: 2rem;
+  }
 }
