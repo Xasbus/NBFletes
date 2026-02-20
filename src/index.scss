@@ -60,7 +60,7 @@ body {
   background-color: rgb(27, 18, 13); /* Matches page background */
 }
 
-/* Remove pill styling and apply elegant gold text */
+/* Apply elegant gold text */
 .navbar-nav .nav-link {
   background: none !important;
   color: #d4af37 !important; /* Gold */
@@ -93,7 +93,7 @@ body {
 }
 
 /* ================================
-   MOBILE NAVBAR (merged cleanup)
+   MOBILE NAVBAR
 ================================ */
 
 @media (max-width: 768px) {
