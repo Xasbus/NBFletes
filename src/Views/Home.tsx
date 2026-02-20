@@ -6,18 +6,6 @@ export function Home() {
   return (
     <>
       <main>
-        {/* <div className="title-container content-wrapper">
-          <h1>Home Page</h1>
-          <img
-            className="title-image"
-            title="NBSignature"
-            alt="NBSignature"
-            width="40%"
-            height="40%"
-            src={NBSignature1}
-          />
-        </div> */}
-
         <div className="hero-signature">
           <img
             className="signature-image"

@@ -21,22 +21,23 @@ export function CollapsibleNavbar() {
           <span className="navbar-toggler-icon "></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <NavLink
-              className="nav-link"
-              aria-current="page"
-              to={`${rootPath}/`}
-              end
-            >
-              Home
-            </NavLink>
-            <NavLink className="nav-link" to={`${rootPath}/latestupdates`}>
-              Latest Updates
-            </NavLink>
-            <NavLink className="nav-link" to={`${rootPath}/newsletter`}>
-              Newsletter Signup
-            </NavLink>
-          </div>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <NavLink className="nav-link" to={`${rootPath}/`} end>
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to={`${rootPath}/latestupdates`}>
+                Latest Updates
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to={`${rootPath}/newsletter`}>
+                Newsletter Signup
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
