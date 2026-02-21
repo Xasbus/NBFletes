@@ -5,47 +5,24 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(27, 18, 13);
+  background-image: url("../assets/BrownBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center center;
+  background-attachment: fixed;
+
+  background-color: rgb(18, 15, 2);
   font-family: "Georgia", serif;
+  color: #d4af37; /* Global text color */
 }
 
 /* Wrapper for background image */
 .background-wrapper {
-  background-image: url("../assets/BrownBackground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   width: 100%;
   min-height: 100vh;
+
   display: flex;
-  justify-content: center;
-}
-
-/* Main content wrapper */
-.content-wrapper {
-  width: 100%;
-  padding: 0 20px;
-  margin-top: 20px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-/* ================================
-   HEADER / SIGNATURE SECTION
-================================ */
-
-.hero-signature {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px; /* Mobile-first spacing */
-  padding-bottom: 20px;
-}
-
-.signature-image {
-  width: 100%;
-  max-width: 320px; /* Ideal for mobile */
-  height: auto;
-  filter: contrast(1) brightness(1.4);
+  flex-direction: column;
 }
 
 /* ================================
@@ -57,7 +34,7 @@ body {
 }
 
 .navColor {
-  background-color: rgb(27, 18, 13); /* Matches page background */
+  background-color: transparent !important;
 }
 
 /* Apply elegant gold text */
@@ -97,7 +74,6 @@ body {
 ================================ */
 
 @media (max-width: 768px) {
-  /* Remove Bootstrap's default white background on mobile */
   .navbar,
   .navColor,
   .colNavBarColor,
@@ -107,7 +83,6 @@ body {
     backdrop-filter: none !important;
   }
 
-  /* Make the mobile dropdown overlay the page instead of pushing it */
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -121,7 +96,6 @@ body {
     padding: 10px 0;
   }
 
-  /* Make each menu item fully boxed-in */
   .navbar-nav .nav-link {
     background-color: rgba(0, 0, 0, 0.55) !important;
     margin: 0;
@@ -129,46 +103,5 @@ body {
     width: 100%;
     display: block;
     text-align: center;
-  }
-}
-
-/* ================================
-   TYPOGRAPHY
-================================ */
-
-.content-wrapper h1 {
-  font-size: 1.6rem;
-  color: #d4af37;
-  margin-top: 10px;
-}
-
-/* ================================
-   RESPONSIVE BREAKPOINTS
-================================ */
-
-/* Tablet */
-@media (min-width: 600px) {
-  .signature-image {
-    max-width: 450px;
-  }
-
-  .content-wrapper h1 {
-    font-size: 1.8rem;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-  .hero-signature {
-    padding-top: 80px;
-    padding-bottom: 40px;
-  }
-
-  .signature-image {
-    max-width: 600px;
-  }
-
-  .content-wrapper h1 {
-    font-size: 2rem;
   }
 }
